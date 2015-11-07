@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 
-		<title>Quiz App</title>
+		<title>Fitness Quiz</title>
 
 		<!-- Meta Tags -->
 		<meta charset="utf-8"/>
@@ -18,27 +18,25 @@
 	
 	</head>
 	<body>
-		<h2>JS and JQuery Quiz</h2>
+		<h2>Fitness Quiz</h2>
 
-		<div class="intro">
-			Welcome! When the button at the bottom is clicked, the question and answers below will
-			progress to the next question and respective answer chioces. Good luck!
-			<br>
+		<h4 id="score"></h4>
+
+		<div id="content">
+			<h3 id="questions">The expression of power can best be described as</h3>
+
+			<input type="radio" id="radio1" name="radios" value="1" ><span id="r1">Force x Speed x Time x Effort</span><br/>
+			<input type="radio" id="radio2" name="radios" value="2"><span id="r2">Speed x Force divided by Momentum</span><br/>
+			<input type="radio" id="radio3" name="radios" value="3"><span id="r3">Distance moved divided by Speed x Volume</span><br/>
+			<input type="radio" id="radio4" name="radios" value="4"><span id="r4">Force x Distance divided by Time</span><br/>
+
+			<h3 id="correct"></h3>
+			<h3 id="inCorrect"></h3>
+
+
+
+			<button class="guessButton">Submit</button>
+
 		</div>
-
-		<br>
-
-		<div id="questions">Click submit to start</div>
-
-		<br>
-
-		<input type="radio" id="radio1" name="radios" value="1"><span id="r1"></span></br>
-		<input type="radio" id="radio2" name="radios" value="2"><span id="r2"></span></br>
-		<input type="radio" id="radio3" name="radios" value="3"><span id="r3"></span></br>
-		<input type="radio" id="radio4" name="radios" value="4"><span id="r4"></span></br>
-
-		</br>
-
-		<button id="guessButton">Submit</button>
 	</body>
 </html>
