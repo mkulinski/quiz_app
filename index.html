@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-
 		<title>Fitness Quiz</title>
-
 		<!-- Meta Tags -->
 		<meta charset="utf-8"/>
-		
-		<!-- Stylesheets
+
+
+		<link href='https://fonts.googleapis.com/css?family=Gentium+Book+Basic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:600,700,800' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles/reset.css">
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,900italic' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="styles/style.css"/> 
- -->
-		<!-- JavaScript -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
+		<link rel="stylesheet" href="styles/style.css"/>
 	
 	</head>
 	<body>
-		<h2>Fitness Quiz</h2>
+		<section id="allContent">
+			<header>
+				<h1>Fitness Quiz</h1>
+			</header>
 
-		<h4 id="score"></h4>
+			<p id="score">Score: 0</p>
 
-		<div id="content">
-			<h3 id="questions">The expression of power can best be described as</h3>
+			<div id="content">
+				<h3 id="questions">The expression of power can best be described as</h3>
+				<div id="options">
+					<label class="yellow"><input type="radio" id="radio1" name="radios" value="1" ><span id="r1">Force x Speed x Time x Effort</span><br/></label>
+					<label class="yellow"><input type="radio" id="radio2" name="radios" value="2"><span id="r2">Speed x Force divided by Momentum</span><br/></label>
+					<label class="yellow"><input type="radio" id="radio3" name="radios" value="3"><span id="r3">Distance moved divided by Speed x Volume</span><br/></label>
+					<label class="yellow"><input type="radio" id="radio4" name="radios" value="4"><span id="r4">Force x Distance divided by Time</span><br/></label>
+				</div>
 
-			<input type="radio" id="radio1" name="radios" value="1" ><span id="r1">Force x Speed x Time x Effort</span><br/>
-			<input type="radio" id="radio2" name="radios" value="2"><span id="r2">Speed x Force divided by Momentum</span><br/>
-			<input type="radio" id="radio3" name="radios" value="3"><span id="r3">Distance moved divided by Speed x Volume</span><br/>
-			<input type="radio" id="radio4" name="radios" value="4"><span id="r4">Force x Distance divided by Time</span><br/>
+				<button class="guessButton">Submit</button>
 
-			<h3 id="correct"></h3>
-			<h3 id="inCorrect"></h3>
-
-
-
-			<button class="guessButton">Submit</button>
-
-		</div>
+			</div>
+		</section>
+		<!-- JavaScript -->
+		<script type="text/javascript" src="js/app.js"></script>
 	</body>
 </html>

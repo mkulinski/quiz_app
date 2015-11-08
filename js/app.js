@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		ans = ans + 1;
 
 		//checks if answer is right or wrong, gets score and alerts user
-		var radio = document.querySelector('#content input[type=radio]:checked');
+		var radio = document.querySelector('#options input[type=radio]:checked');
 		if (radio.value == ansLive) {
 			userScore++;
 			alert("You are correct!");
