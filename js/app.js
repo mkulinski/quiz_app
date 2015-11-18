@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var rb3 = 2;
     var rb4 = 3;
     var ans = 0;
+
     document.querySelector(".guessButton").addEventListener("click", function(){
 
         //Get current setup
@@ -65,8 +66,16 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         //clear radio button
-        if (radio.checked == true) {
-            radio.checked = false;
+        radio.checked = false;
+
+        //Reset questions and answers after the last question
+        if (q > 5) {
+            q = 0;
+            rb1 = 0;
+            rb2 = 1;
+            rb3 = 2;
+            rb4 = 3;
+            ans = 0;
         }
     });
 });
