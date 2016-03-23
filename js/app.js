@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         answers: [4,3,3,1,1,4,2]
     };
 
-    //global variables to store the number of right and wrong answers
+    //global variables to store the users score
     var userScore = 0;
 
     //global variable counters
